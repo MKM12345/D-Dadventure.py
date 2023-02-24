@@ -20,3 +20,24 @@ def draw_background():
 def draw():
   draw_background()
 pgzrun.go()
+HEIGHT = GRID_HEIGHT * GRID_SIZE
+# Create the map
+MAP = ["WWWWWWWWWWWWWWWW",
+       "W              W",
+       "W              W",
+       "W  W  KG       W",
+       "W  WWWWWWWWWW  W",
+       "W              W",
+       "W      P       W",
+       "W              W",
+       "W  WWWWWWWWWW  W",
+       "W      GK   W  W",
+       "W              W",
+       "W              D",
+       "WWWWWWWWWWWWWWWW",]
+            screen.blit("floor1", screen_chords(x,y))
+def draw_scenery():
+    for y in range(GRID_HEIGHT):
+      for x in range(GRID_WIDTH):
+        square = MAP[y] [x]
+        if square == "W":
