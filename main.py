@@ -1,6 +1,5 @@
 import colorama
 from colorama import Fore    
-# GOOGLE SEARCH - https://www.studytonight.com/python-howtos/how-to-print-colored-text-in-python
 
 print(Fore.RED)              # RED COLOUR TEXT
 print(' ')                  # A line break
