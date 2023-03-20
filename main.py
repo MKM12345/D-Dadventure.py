@@ -1,8 +1,9 @@
 import colorama
 from colorama import Fore    
 
-print(Fore.RED)              # RED COLOUR TEXT
-print(' ')                  # A line break
+
+print(Fore.RED)            
+print(' ')                  
 print('****Welcome to Dungeons & Dragons****')
 print(' ')
 print("Your Dungon Master today will be me - Mantra Jhala")
@@ -12,46 +13,42 @@ print("You are standing on a pathway in the countryside with your guild.")
 print(' ')
 print("Suddenly, a trio of orcs rush you from a nearby bush! What do you do ?")
 print(' ')
-print(Fore.GREEN)            # GREEN COLOUR TEXT
+print(Fore.GREEN)           
 print("You have 2 choices. They are: 1 - Throw your hand axes at the orcs OR 2 - Send a spell at the orcs? : - ")
 print(' ')
-print(Fore.BLUE)             # BLUE COLOUR TEXT
+print(Fore.BLUE)             
 
 dnd_choice = input("Please enter either 1 or 2 as your choice here :- ")
-if dnd_choice == "1": # Run from bush 
-  # This code is indented 1 time because it is 1 choice deep
+if dnd_choice == "1":
   print(Fore.GREEN)
   print(' ')
   print("You threw hand axes however, the Orcs did not die and now Orcs are coming to attack you!")
   print(' ')
-  print(Fore.BLUE)             # BLUE COLOUR TEXT
+  print(Fore.BLUE)           
   damage_choice = input("Do you 1. Disengage or 2. Tank the hit: - ")
 
-  if damage_choice == "1": # Powerful hit, die
-    # This code is indented 2 time because it is 2 choices deep
-    print(Fore.GREEN)            # GREEN COLOUR TEXT
+  if damage_choice == "1": 
+    print(Fore.GREEN)            
     print(' ')  
     print("You disapper and appear again, 60 feet away.  The Orcs clumsily trip over each other and fall. You have disengaged, now you have 2 choices")
     print(' ')
-    print(Fore.BLUE)             # BLUE COLOUR TEXT
+    print(Fore.BLUE)
     disengage_choice = input("Do you 1. Run back into combat or 2. Let your friends have a shot and then run back in: - ")
 
-    if disengage_choice == "1": 
-    # This code is indented 3 time because it is 3 choices deep
-      print(Fore.GREEN)            # GREEN COLOUR TEXT
+    if disengage_choice == "1":
+      print(Fore.GREEN)         
       print(' ')      
       print("The Orcs glare at you, when you run for the combat and strike you with their maul. You take too much damage & you Die")
       print("GAME OVER")
       
     elif disengage_choice == "2":
-     # This code is indented 3 time because it is 3 choices deep 
-      print(Fore.GREEN)            # GREEN COLOUR TEXT
+      print(Fore.GREEN)   
       print(' ')
       print("The Artificer's dragon, Kamiyami strikes the orcs with bolts of lightning and kills them.")
       print("You see light through the trees and escape from the battle field, unhurt!")
       print("YOU WIN")
 
-    elif disengage_choice != "1" or "2": # Check choices using logical operator (or) 
+    elif disengage_choice != "1" or "2":
       print(' ')
       print("Incorrect input, please restart game")
 
@@ -91,4 +88,3 @@ elif dnd_choice == "2":
 elif dnd_choice != "1" or "2": # Check choices using logical operator (or) 
   print(' ')
   print("Incorrect input, please restart game")
-
