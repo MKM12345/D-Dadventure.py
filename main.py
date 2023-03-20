@@ -79,7 +79,7 @@ elif dnd_choice == "2":
     
   elif healing_choice == "2":
     print(' ')
-    print("GAME OVER - You tried to perform the medicine check, but you panic and poke the wound and make it worst. Kamiyami dies, orcs attack you, you take too much damage & die.")
+    print("GAME OVER - You tried to perform the medicine check, but you panic and poke the wound and make it worst. Kamiyami dies. The orcs attack you with their enchanted maul, you take too much damage from a powerful push-back explosion & die.")
 
   elif healing_choice != "1" or "2": # Check choices using logical operator (or) 
     print(' ')
